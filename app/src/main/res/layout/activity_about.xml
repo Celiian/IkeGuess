@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_200"
+    tools:context=".Activity.AboutActivity">
+
+    <TextView
+        android:id="@+id/appliTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="À propos "
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/versionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="@+id/divider"
+        tools:text="X.XX" />
+
+    <TextView
+        android:id="@+id/groupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="L'équipe"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/teamThreeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="ROQUAIN David"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/teamTwoTextView"
+        app:layout_constraintStart_toStartOf="@+id/teamOneTextView"
+        app:layout_constraintTop_toBottomOf="@+id/groupTextView" />
+
+    <TextView
+        android:id="@+id/teamOneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="LE LEZ Héloïse"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/teamTwoTextView"
+        app:layout_constraintStart_toStartOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/groupTextView" />
+
+    <TextView
+        android:id="@+id/teamTwoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="OPIGEZ Celian"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/divider"
+        app:layout_constraintStart_toEndOf="@+id/teamOneTextView"
+        app:layout_constraintTop_toBottomOf="@+id/groupTextView" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="313dp"
+        android:layout_height="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ikea_logo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:lineSpacingExtra="4sp"
+        android:text="IkeGuess est une application mobile permettant d’apprendre simplement et efficacement les noms des meubles Ikea, leur signification et leur prononciation. Il est aussi possible de connaître un peu mieux les divers lacs (92 409) et îles (221 831) de Suède. La liste des meubles n’est en aucun cas définitive et peut être sujette à modification. "
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/appliTextView" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="309dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="versionTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootItem"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/blue_200">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/difficultyImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundImageView"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundImageView"
+        app:layout_constraintTop_toTopOf="@+id/backgroundImageView"
+        tools:srcCompat="@android:drawable/ic_media_play"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/blue_200"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundImageView"
+        app:layout_constraintStart_toStartOf="@+id/backgroundImageView"
+        app:layout_constraintTop_toTopOf="@+id/backgroundImageView"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/answersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/blue_200"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundImageView"
+        app:layout_constraintEnd_toEndOf="@+id/titleTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/titleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        tools:text="1,2,3" />
+
+    <ImageView
+        android:id="@+id/mediaImageView"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundImageView"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundImageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/backgroundImageView"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        app:layout_constraintVertical_bias="0.535"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

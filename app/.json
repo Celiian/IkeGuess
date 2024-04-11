@@ -1,0 +1,55 @@
+{
+  "furnitureSimple": [
+    {
+      "name": "KULLEN",
+      "url": "https://www.ikea.com/fr/fr/images/products/kullen-commode-5-tiroirs-blanc__0393316_pe562524_s5.jpg?f=x"
+    },
+    {
+      "name": "RAST",
+      "url": "https://www.ikea.com/fr/fr/images/products/rast-commode-3-tiroirs-pin__0651178_pe706790_s5.jpg?f=xl"
+    },
+    {
+      "name": "HEMNES",
+      "url": "https://www.ikea.com/fr/fr/images/products/hemnes-commode-6-tiroirs-teinte-blanc__0651105_pe706673_s5.jpg?f=xl"
+    },
+    {
+      "name": "IDANÄS",
+      "url": "https://www.ikea.com/fr/fr/images/products/idanaes-el-av-double-portes-vitrees-blanc__1009038_pe827427_s5.jpg?f=xl"
+    },
+    {
+      "name": "EKET",
+      "url": "https://www.ikea.com/fr/fr/images/products/eket-element-mural-porte-vitree-gris-turquoise__0914841_pe784340_s5.jpg?f=xl"
+    },
+    {
+      "name": "BJÖRKSNÄS",
+      "url": "https://www.ikea.com/fr/fr/images/products/bjoerksnaes-commode-5-tiroirs-bouleau__0598056_pe677425_s5.jpg?f=xl"
+    },
+    {
+      "name": "HOLMSUND",
+      "url": "https://www.ikea.com/fr/fr/images/products/holmsund-canape-convertible-dangle-orrsta-bleu-clair__0532354_pe648004_s5.jpg?f=xl"
+    },
+    {
+      "name": "GURSKEN",
+      "url": "https://www.ikea.com/fr/fr/images/products/gursken-commode-3-tiroirs-beige-clair__0923963_pe788460_s5.jpg?f=xl"
+    },
+    {
+      "name": "GURSKEN",
+      "url": "https://www.ikea.com/fr/fr/images/products/gursken-structure-lit-avec-tete-de-lit-beige-clair-luroey__0946599_pe798165_s5.jpg?f=xl"
+    },
+    {
+      "name": "MALM",
+      "url": "https://www.ikea.com/fr/fr/images/products/malm-commode-6-tiroirs-brun-noir-miroir__0484885_pe621349_s5.jpg?f=xl"
+    },
+    {
+      "name": "SMÅSTAD / PLATSA",
+      "url": "https://www.ikea.com/fr/fr/images/products/smastad-platsa-table-a-langer-blanc-turquoise-pale-avec-bibliotheque__1100227_pe866081_s5.jpg?f=xl"
+    },
+    {
+      "name": "GODISHUS",
+      "url": "https://www.ikea.com/fr/fr/images/products/godishus-commode-3-tiroirs-blanc__0721186_pe735626_s5.jpg?f=xl"
+    }
+  ],
+  "furnitureMedium" : [
+
+  ]
+}

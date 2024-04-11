@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.IkeGuess" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/yellow_500</item>
+        <item name="colorPrimaryVariant">@color/yellow_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue_200</item>
+        <item name="colorSecondaryVariant">@color/blue_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorSecondary</item>
+        <!-- Customize your theme here. -->
+        <item name="colorControlActivated">@color/yellow_500</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+</resources>

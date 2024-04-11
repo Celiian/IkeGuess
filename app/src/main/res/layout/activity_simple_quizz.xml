@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".Activity.SimpleQuizzActivity">
+
+    <TextView
+        android:id="@+id/questionFr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:text="Quel est le nom de ce meuble ?"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/IkeaImageView"
+        app:layout_constraintStart_toStartOf="@+id/IkeaImageView"
+        app:layout_constraintTop_toBottomOf="@+id/idQuizzTextView" />
+
+    <ImageView
+        android:id="@+id/IkeaImageView"
+        android:layout_width="320dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="50dp"
+        android:transitionName="furniture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/questionSud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Vad heter denna möbel?"
+        app:layout_constraintEnd_toEndOf="@+id/questionFr"
+        app:layout_constraintHorizontal_bias="0.489"
+
+        app:layout_constraintStart_toStartOf="@+id/questionFr"
+        app:layout_constraintTop_toBottomOf="@+id/questionFr" />
+
+    <Button
+        android:id="@+id/validateButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow_500"
+        android:text="Valider"
+        android:textColor="@color/Textbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="345dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/IkeaImageView"
+        app:layout_constraintTop_toBottomOf="@+id/questionSud" />
+
+    <TextView
+        android:id="@+id/difficultyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/IkeaImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.909"
+        tools:text="Difficulté" />
+
+    <TextView
+        android:id="@+id/validateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438" />
+
+    <TextView
+        android:id="@+id/idQuizzTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/IkeaImageView"
+        app:layout_constraintStart_toStartOf="@+id/IkeaImageView"
+        app:layout_constraintTop_toBottomOf="@+id/IkeaImageView" />
+
+    <Button
+        android:id="@+id/buttonSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ecouter le mot"
+        android:textColor="@color/Textbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/IkeaImageView"
+        app:layout_constraintEnd_toEndOf="@+id/IkeaImageView"
+        app:layout_constraintStart_toStartOf="@+id/IkeaImageView"
+        app:layout_constraintTop_toTopOf="@+id/IkeaImageView" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/IkeaImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/difficultyTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
